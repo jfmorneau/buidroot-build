@@ -19,7 +19,7 @@ docker run -ti --rm \
 Finally, for a more complete example, this one let's you link a local folder to the working dir inside the container:
 
 ```
-docker run -ri --rm \
+docker run -ti --rm \
     -v ~/.ssh:/home/user/.ssh \
     -v [path_to_local_folder]:/home/user \
     jfmorneau/buildroot-build
