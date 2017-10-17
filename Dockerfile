@@ -10,6 +10,7 @@ RUN apt-get -qy update && apt-get -y install \
 	curl \
 	git \
 	libssl-dev \
+	libncurses5-dev \
 	openssl \
 	python \
 	unzip \
