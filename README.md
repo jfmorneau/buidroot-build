@@ -5,7 +5,7 @@ Container that can bu used to build Buildroot project with the proper compiler a
 To acces the container's shell:
 
 ```
-docker run -ti --rm jfmorneau/buildroot-build bash
+docker run -ti --rm jfmorneau/buildroot-build
 ```
 
 If you wish to use your ssh enviroment inside the container:
@@ -13,7 +13,7 @@ If you wish to use your ssh enviroment inside the container:
 ```
 docker run -ti --rm \
     -v ~/.ssh:/home/user/.ssh \
-    jfmorneau/buildroot-build bash
+    jfmorneau/buildroot-build
 ```
 
 Finally, for a more complete example, this one let's you link a local folder to the working dir inside the container:
@@ -22,5 +22,5 @@ Finally, for a more complete example, this one let's you link a local folder to 
 docker run -ri --rm \
     -v ~/.ssh:/home/user/.ssh \
     -v [path_to_local_folder]:/home/user \
-    jfmorneau/buildroot-build bash
+    jfmorneau/buildroot-build
 ```

@@ -26,3 +26,5 @@ VOLUME /home/user
 USER user
 
 WORKDIR /home/user
+
+CMD ["bash"]
