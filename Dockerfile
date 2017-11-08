@@ -13,6 +13,7 @@ RUN apt-get -qy update && apt-get -y install \
 	libncurses5-dev \
 	openssl \
 	python \
+	sudo \
 	unzip \
 	wget \
 && rm -rf /var/lib/apt/lists/*
