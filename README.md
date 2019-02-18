@@ -13,6 +13,7 @@ If you wish to use your ssh enviroment inside the container:
 ```
 docker run -ti --rm \
     -v ~/.ssh:/home/user/.ssh \
+    -e UID=$(id -u) -e GID=$(id -g) \
     jfmorneau/buildroot-build
 ```
 
@@ -24,6 +25,7 @@ docker run -ti --rm \
     -v ~/.ssh:/home/user/.ssh \
     -v [path_to_local_folder]:/home/user \
     -v ~/.gitconfig:/home/user/.gitconfig \
+    -e UID=$(id -u) -e GID=$(id -g) \
     jfmorneau/buildroot-build
 ```
 
