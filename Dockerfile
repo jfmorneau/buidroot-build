@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ubuntu:18.04
 MAINTAINER Jean-Francois Morneau <jf@jfzone.net>
 
 ENV DEBIAN_FRONTEND noninteractive
@@ -16,6 +16,7 @@ RUN apt-get -qy update && apt-get -y install \
 	sudo \
 	unzip \
 	wget \
+    rsync \
 && rm -rf /var/lib/apt/lists/*
 
 
